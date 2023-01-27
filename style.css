@@ -1,0 +1,84 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    border: none;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Variables */
+ :root {
+   --backgroundColor: #070707;
+   --secundary-backgroundColor: #141414;
+   --border-backgroundColor: #c60000;
+   
+   --textColor: #e3e3e3;
+   --secundary-textColor: #00ccff;
+ }
+/* Main */
+.main {
+  background: var(--backgroundColor);
+  height: 100vh;
+  width: 100%;
+}
+
+/* Ladding Page */
+.ladding-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+.user-apresent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-user-name {
+  font-size: 80px;
+}
+
+.medias-link {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.medias-link a {
+  padding: 5px;
+}

@@ -33,17 +33,22 @@ a {
 /* Variables */
  :root {
    --backgroundColor: #070707;
-   --secundary-backgroundColor: #141414;
-   --border-backgroundColor: #c60000;
+   --secundary-backgroundColor: #dfdfdf;
+   --ter-backgroundColor: #252525;
+   --border-backgroundColor: #00ccff;
    
    --textColor: #e3e3e3;
-   --secundary-textColor: #00ccff;
+   --secundary-textColor: #202020;
  }
 /* Main */
 .main {
-  background: var(--backgroundColor);
+  background: var(--secundary-backgroundColor);
   height: 100vh;
   width: 100%;
+}
+
+.special-texts {
+  color: #00ccff;
 }
 
 /* Ladding Page */
@@ -53,7 +58,7 @@ a {
   justify-content: center;
   height: 100%;
   width: 100%;
-  color: white;
+  color: var(--secundary-textColor);
   user-select: none;
 }
 
@@ -84,4 +89,66 @@ a {
 
 .medias-link a {
   padding: 5px;
+}
+
+/* personal-projects */
+.personal-projects {
+  background: var(--backgroundColor);
+  height: 203vh;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 15px;
+  color: var(--textColor);
+}
+
+.games-project {
+  display: flex;
+  flex-direction: column;
+}
+
+.arts {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-text-global {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  gap: 10px;
+}
+
+.project-list-global {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+.p-p-global {
+  height: 330px;
+  width: 250px;
+  background: var(--ter-backgroundColor);
+  border-radius: 12px;
+}
+
+.img-test {
+  height: 180px;
+  width: 100%;
+  border-radius: 12px;
+  background: #00ccff;
+}
+
+.name-project {
+  padding: 6px;
+  font-size: 25px;
+  color: var(--textColor);
+}
+
+.description-project {
+  padding: 6px;
+  font-size: 15px;
+  color: var(--textColor);
 }

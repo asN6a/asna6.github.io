@@ -32,9 +32,9 @@ a {
 
 /* Variables */
  :root {
-   --backgroundColor: #070707;
+   --backgroundColor: #141414;
    --secundary-backgroundColor: #dfdfdf;
-   --ter-backgroundColor: #252525;
+   --ter-backgroundColor: #242424;
    --border-backgroundColor: #00ccff;
    
    --textColor: #e3e3e3;
@@ -45,6 +45,8 @@ a {
   background: var(--secundary-backgroundColor);
   height: 100vh;
   width: 100%;
+  font-family: 'Sans-Serif', 'Quicksand';
+  user-select: none;
 }
 
 .special-texts {
@@ -59,7 +61,6 @@ a {
   height: 100%;
   width: 100%;
   color: var(--secundary-textColor);
-  user-select: none;
 }
 
 .user-apresent {
@@ -75,7 +76,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Sans-Serif', 'Quicksand';
 }
 
 .text-user-name {
@@ -91,10 +91,39 @@ a {
   padding: 5px;
 }
 
+.firewave_icon {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  right: 47%;
+  top: 27vh;
+  opacity: 60%;
+}
+/* About Me */
+.about-me {
+  background: var(--backgroundColor);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  color: var(--textColor);
+  gap: 20px;
+  transition: all 0.5s;
+}
+
+.about-description {
+  font-size: 30px;
+  width: 110vh;
+}
+
+.about-text {
+  font-size: 70px;
+}
 /* personal-projects */
 .personal-projects {
-  background: var(--backgroundColor);
-  height: 203vh;
+  background: var(--secundary-backgroundColor);
+  height: 100;
   display: flex;
   flex-direction: column;
   padding: 50px;
@@ -118,6 +147,7 @@ a {
   align-items: center;
   padding: 5px;
   gap: 10px;
+  color: var(--secundary-textColor);
 }
 
 .project-list-global {
@@ -128,27 +158,71 @@ a {
 }
 
 .p-p-global {
-  height: 330px;
+  height: 350px;
   width: 250px;
   background: var(--ter-backgroundColor);
   border-radius: 12px;
 }
 
 .img-test {
-  height: 180px;
+  height: 200px;
   width: 100%;
   border-radius: 12px;
-  background: #00ccff;
 }
 
 .name-project {
-  padding: 6px;
-  font-size: 25px;
+  padding: 7px;
+  font-size: 20px;
   color: var(--textColor);
 }
 
 .description-project {
-  padding: 6px;
+  padding: 7px;
   font-size: 15px;
   color: var(--textColor);
+}
+
+.last-update {
+  position: relative;
+  top: 10px;
+  padding: 7px;
+  font-size: 15px;
+  color: #888888;
+}
+/* Responsive */
+@media screen and (max-width: 768px){
+  .firewave_icon {
+    right: 42%;
+    top: 32vh;
+  }
+  .text-user-name {
+    font-size: 40px;
+  }
+  
+  .user-description {
+    font-size: 90%;
+    font-weight: 300px;
+  }
+  
+  .medias-link {
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .personal-projects {
+    height: 100vh;
+    align-items: center;
+  }
+  
+  .about-me {
+    padding-left: 20px;
+  }
+  .about-text {
+    font-size: 30px;
+  }
+  
+  .about-description {
+    width: 50vh;
+    font-size: 20px;
+  }
 }

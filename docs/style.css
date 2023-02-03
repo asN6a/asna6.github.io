@@ -1,60 +1,108 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="docs/style.css">
-  <script src="docs/main.js"></script>
-  <meta name="title" content="Aislan Alves | Home">
-  <meta name="description" content="Hobbyist developer.">
-  <meta name="keywords" content="Aislan A, Aislan, AsN, Delusions, Project Walker, Programmer, Developer, Artist">
-  <meta name="robots" content="index, follow">
-  <meta name="revisit-after" content="1 days">
-  <meta name="author" content="Aislan A. - AsN">
-  <title>Aislan A | Home</title>
-  <meta property="og:title" content="Aislan A | Home">
-  <meta property="og:description" content="Hobbyist developer.">
-  <meta property="og:image" content="./img/favicon.png">
-  <meta property="og:url" content="https://asn6a.github.io/">
-  <meta property="og:site_name" content="Aislan A">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="pt-BR">
-  <meta property="twitter:title" content="Hobbyist developer.">
-  <meta name="twitter:card" content="summary">
-  <script type="application/ld+json">
-      {
-          "@context": "https://schema.org",
-          "@type": "WebSite",
-          "description": "Hobbyist developer.",
-          "headline": "Aislan A | Home",
-          "name": "Aislan A",
-          "url": "https://asn6a.github.io/"
-      }
-    </script>
-    <link rel="canonical" href="https://asn6a.github.io/">
-</head>
-<body>
-  <section class="main">
-    <section class="ladding-page">
-      <div class="user-apresent">
-        <div class="user-info">
-          <div class="text-user-name">
-            <h1>Hi, I'm <span class="special-texts" id="tw-text">Aislan</span></h1>
-          </div>
-          <div class="user-description">
-            <p class="hero-tag"><span class="typer" id="main" data-words="Pixel Artist, Programmer, CCO of FireWave Interactive." data-delay="100" data-deletedelay="1000" data-loop="1" style="color:blue!important;"></span> &nbsp;</p>
-            <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
-          </div>
-        </div>
-        <div class="medias-link">
-          <a href="https://twitter.com/_asN6?t=HiletErLr26k9Wdvfva9IQ&s=09"><i class="fa-brands fa-twitter"></i></a>
-          <a href="https://instagram.com/asn.a6_?igshid=NTA5ZTk1NTc="><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://asn16a.itch.io/"><i class="fa-brands fa-itch-io"></i></a>
-          <a href="https://github.com/asN6a"><i class="fa-brands fa-github"></i></a>
-        </div>
-      </div>
-    </section>
-  </section>
-</body>
-</html>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    border: none;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Variables */
+ :root {
+   --backgroundColor: #141414;
+   --secundary-backgroundColor: #dfdfdf;
+   --ter-backgroundColor: #242424;
+   --border-backgroundColor: #00ccff;
+   
+   --textColor: #e3e3e3;
+   --secundary-textColor: #202020;
+ }
+/* Main */
+.main {
+  background: var(--secundary-backgroundColor);
+  height: 100vh;
+  width: 100%;
+  font-family: 'Sans-Serif', 'Quicksand';
+  user-select: none;
+}
+
+.special-texts {
+  color: #00ccff;
+}
+
+/* Ladding Page */
+.ladding-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: var(--secundary-textColor);
+}
+
+.user-apresent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-user-name {
+  font-size: 80px;
+}
+
+.medias-link {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.medias-link a {
+  padding: 5px;
+}
+/* Responsive */
+@media screen and (max-width: 768px){
+  .text-user-name {
+    font-size: 40px;
+  }
+  
+  .user-description {
+    font-size: 90%;
+    font-weight: 300px;
+  }
+  
+  .medias-link {
+    padding: 10px;
+    font-size: 20px;
+  }
+}
